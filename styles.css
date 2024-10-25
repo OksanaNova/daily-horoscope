@@ -1,0 +1,250 @@
+body {
+    background-color: 	#00001f;
+    color: #fff;
+}
+
+nav {
+    background-color: #00001f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    z-index: 1;
+}
+
+/* MODAL WINDOW */
+
+#modalWindow {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,31,0.7);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+.modal-content {
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1534262521332-cfd802370cc0?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    width: 60%;
+    height: 60%;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    animation: ani 4s forwards;
+    -webkit-animation: ani 4s forwards;
+}
+
+/* Animation */
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* The Close Button */
+.close {
+    font-size: 30px;
+    float: right;
+    border: none;
+    background: transparent;
+  }
+  
+  .close:hover {
+    font-size: 31px;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: #000043;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .modal-body {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+p {
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.login {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 5px 20px;
+}
+
+.login:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-duration: 2s;
+}
+
+.one {
+    margin-top: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 40px;
+    font-family: "Khand", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Merriweather", serif;
+}
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 25px;
+    width: 80%;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 10px rgba(247, 246, 246, 0.9));
+}
+
+h3, h2 {
+    font-family: "Khand", sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+.modalText {
+    font-size: 22px;
+    line-height: 45px;
+}
+
+.about {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    padding: 50px;
+}
+
+.two {
+    font-size: 15px;
+    font-family: "Khand", sans-serif;
+}
+
+.footer {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+@media all and (max-width: 600px) {
+    .login {
+        padding: 5px 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+        height: auto;
+    }
+
+    .close {
+        font-size: 20px;
+    }
+
+    .modal-body {
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .one {
+        margin-top: 50px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .main {
+        gap: 15px;
+        width: 90px;
+        margin-top: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+
+    p, .modalText {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .sign {
+        padding: 10px;
+    }
+
+    .about {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .two {
+        font-size: 12px;
+    }
+}
+
+
